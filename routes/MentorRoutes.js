@@ -6,7 +6,7 @@ import {
   getMentor,
   updateMentor,
   deleteMentor,
-} from "../controllers/mentorController.js";
+} from "../controllers/MentorController.js";
 
 import upload from "../middlewares/upload.js";
 import auth from "../middlewares/AuthMiddleware.js";

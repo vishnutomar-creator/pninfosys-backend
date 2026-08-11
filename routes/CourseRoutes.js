@@ -8,7 +8,7 @@ import {
   getCourse,
   updateCourse,
   deleteCourse,
-} from "../controllers/courseController.js";
+} from "../controllers/CourseController.js";
 
 import auth from "../middlewares/AuthMiddleware.js";
 import upload from "../middlewares/upload.js";
