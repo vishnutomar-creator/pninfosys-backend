@@ -17,7 +17,13 @@ const app = express();
 connectDB();
 
 // Middlewares
-app.use(cors());
+app.use(cors({
+    origin: [
+        "http://localhost:3000",
+        "https://pninfosys-frontend-nu.vercel.app"
+    ],
+    credentials: true
+}));
 app.use(express.json());
 app.use("/api/auth", authRoutes);
 app.use("/api/courses", courseRoutes);
