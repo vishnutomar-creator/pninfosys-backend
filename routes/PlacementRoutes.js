@@ -13,7 +13,7 @@ import upload from "../middlewares/upload.js";
 
 const router = express.Router();
 
-// Create Placement
+// Create Placement (admin only)
 router.post(
   "/",
   protect,
@@ -21,13 +21,13 @@ router.post(
   createPlacement
 );
 
-// Get All Placements
-router.get("/", protect, getAllPlacements);
+// Get All Placements (public)
+router.get("/", getAllPlacements);
 
-// Get Single Placement
-router.get("/:id", protect, getPlacementById);
+// Get Single Placement (public)
+router.get("/:id", getPlacementById);
 
-// Update Placement
+// Update Placement (admin only)
 router.put(
   "/:id",
   protect,
@@ -35,7 +35,7 @@ router.put(
   updatePlacement
 );
 
-// Delete Placement
+// Delete Placement (admin only)
 router.delete("/:id", protect, deletePlacement);
 
 export default router;
