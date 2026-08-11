@@ -20,7 +20,8 @@ connectDB();
 app.use(cors({
     origin: [
         "http://localhost:3000",
-        "https://pninfosys-frontend-nu.vercel.app"
+        "https://pninfosys-frontend-nu.vercel.app",
+        "https://pninfosys.com/"
     ],
     credentials: true
 }));
