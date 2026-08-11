@@ -21,7 +21,8 @@ app.use(cors({
     origin: [
         "http://localhost:3000",
         "https://pninfosys-frontend-nu.vercel.app",
-        "https://pninfosys.com/"
+        "https://pninfosys.com",
+        "https://www.pninfosys.com"
     ],
     credentials: true
 }));
